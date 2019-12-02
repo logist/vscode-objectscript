@@ -21,19 +21,19 @@
 - Export existing sources to the working directory: press Cmd/Ctrl+Shift+P, type 'ObjectScript', press Enter.
 - Save and compile a class: press Ctrl+F7 (⌘+F7) or select "ObjectScript: Save and compile" from Cmd/Ctrl+Shift+P menu.
 - Server Explorer with possibility to export items![ServerExplorer](https://raw.githubusercontent.com/daimor/vscode-objectscript/master/images/explorer.png)
-- Edit directly on server
+- Edit [directly on server](https://github.com/daimor/vscode-objectscript/wiki/Server-side-editing)
 
 ## Installation
 
 Install [Visual Studio Code](https://code.visualstudio.com/) first.
 
 Open VSCode. Go to extensions and search for "ObjectScript" like it is shown on the attached screenshot and install it.
-Or install from ObjectScript extension page on [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=daimor.vscode-objectscript)
+Alternatively you can install from ObjectScript extension page on [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=daimor.vscode-objectscript)
 ![installation](https://raw.githubusercontent.com/daimor/vscode-objectscript/master/images/installation.gif)
 
 ## Configure connection
 
-To be able to use many plugin features, you need to configure the connection to Caché server first. You can create or edit existing `.vscode/settings.json` file. So, your settings file may somethiing like this.
+To be able to use many plugin features, you need to configure the connection to Caché server first. You can create or edit existing `.vscode/settings.json` file. Your settings file may look like an example below.
   ```JSON
   "objectscript.conn": {
     "active": true,
@@ -47,7 +47,7 @@ To be able to use many plugin features, you need to configure the connection to 
   }
   ```
 
-Or you can edit it through settings editor. Which you can open from menu *Code* > *Preferences* > *Settings* for macOS or *File* > *Preferences* > *Settings* for Windows, search for "workspace settings" through Command Palette [⌘⇧P/Ctrl+Shift+P] or by shortcut [⌘,/Ctrl+,].
+Alternatively you can edit it through settings editor, which you can open from menu *Code* > *Preferences* > *Settings* for macOS or *File* > *Preferences* > *Settings* for Windows, or by searching for "workspace settings" through Command Palette [⌘⇧P/Ctrl+Shift+P], or by using a shortcut [⌘,/Ctrl+,].
 
 - Find a 'objectscript', do not forget to set `active` to `true`
   `port` should follow to web port of instance (usually by default, 57772 for Caché/Ensemble, 52773 for IRIS) ![Settings UI](https://raw.githubusercontent.com/daimor/vscode-objectscript/master/images/settings.png)
@@ -56,4 +56,4 @@ Or you can edit it through settings editor. Which you can open from menu *Code* 
 
 ## Notes
 
-For Caché/IRIS instance with maximum security level, add '%Development' role for '/api/atelier/' web-application ( [More](https://community.intersystems.com/post/using-atelier-rest-api) )
+For Caché/IRIS instance configured with maximum security level, add '%Development' role for '/api/atelier/' web-application ( [More](https://community.intersystems.com/post/using-atelier-rest-api) )
